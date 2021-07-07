@@ -23,16 +23,17 @@ practices and have evolved over the course of writing this paper.
   a. Clear your workspace at the start of the script
   b. Relevant data sets imported and merged
   c. Cleaning of variables in the same order they are presented in methods section of the manuscript, typically:
-   i. Exposure
-   ii. Outcome
-   iii. Effect modifiers
-   iv. Other covariates (ideally cleaned in the order they are listed in the manuscript). An approach that can facilitate review is to include all the covariates in a local (Stata), macro (SAS), etc. so the code reviewer does not need to ensure all the confounders are included in each of the analytic models. This approach can also help avoid inconsistencies if the adjustment variables change over the course of the analysis. 
+   1. Exposure
+   2. Outcome
+   3. Effect modifiers
+   4. Other covariates (ideally cleaned in the order they are listed in the manuscript). An approach that can facilitate review is to include all the covariates in a local (Stata), macro (SAS), etc. so the code reviewer does not need to ensure all the confounders are included in each of the analytic models. This approach can also help avoid inconsistencies if the adjustment variables change over the course of the analysis. 
   d. Define the final analytic sample, detailing who was excluded from the analytic sample and why. If data are clustered (e.g., repeated measures on the same person) describe the entire data structure. A useful approach for defining the analytic sample can be to create a variable called “eligible” that is 0 for people who are not eligible and 1 for people who are eligible. This facilitates analysis of how the analytic sample differs from the overall sample, which can be useful to include in appendix tables. 
   e. The data analysis should be conducted in the order the tables and figures are presented in the results section. The code author should confirm that every analysis includes the same number of observations, unless deviations are specifically justified and noted, to facilitate review
   f. Appendix analyses should be conducted in the order they are presented in the appendix
  3. Checks to ensure the code is working as anticipated should be included in the code script so they can be rechecked every time the code is run. This will also facilitate review by demonstrating to the code reviewer that the code is running properly. For example, when reshaping data from long to wide or vice versa, ensure that the number of unique respondents is as expected, and that the number of observations per respondent is within the expected range.
  4. Remove old or experimental code that is no longer relevant before review – all code that is reviewed should be relevant for the project.
  5. Code should run completely from top to bottom without errors or intervention from the programmer.
+
 
 #### Variable cleaning conventions
 
