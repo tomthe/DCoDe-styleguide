@@ -5,7 +5,7 @@ Draft of a style guide for the DiCoDe-Lab's research projects
 
 ### Directory structure
 
-    ├── LICENSE
+
     ├── README.md          <- The top-level README for developers using this project.
     │                         The readme should contain a short general description of the project
     │                         and a high level description of what the code does and how to run it.
@@ -24,5 +24,6 @@ Draft of a style guide for the DiCoDe-Lab's research projects
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
+    ├── LICENSE            <- Look at https://choosealicense.com/ to find a suitable licence.
     └── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
         └── figures        <- Generated graphics and figures to be used in reporting
