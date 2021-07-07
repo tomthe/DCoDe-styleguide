@@ -40,14 +40,14 @@ practices and have evolved over the course of writing this paper.
  1. Use intuitive, descriptive variable names whenever possible.
  2. Dichotomous variables should be named so that 0 = no and 1 = yes, i.e., create a variable named “male” or a variable named “female” instead of a variable named “sex”
  3. For transformation of variables, attach a suffix specifying the transformation. Some possibilities are as follows:
-  a. to center age at 70, the centered variable could be age_c70
-  b. to z-score CESD, the standardized variable could be cesd_std
-  c. to trichotomize mother‟s education (assuming the variable is named momedu_yrs), the trichotomized variable could be momedu_3cat
-  d. to take the natural log of income, the logged variable could be income_ln
-  e. to rescale age in years to age in decades, the rescaled variable could be age_decades
+   a. to center age at 70, the centered variable could be age_c70
+   b. to z-score CESD, the standardized variable could be cesd_std
+   c. to trichotomize mother‟s education (assuming the variable is named momedu_yrs), the trichotomized variable could be momedu_3cat
+   d. to take the natural log of income, the logged variable could be income_ln
+   e. to rescale age in years to age in decades, the rescaled variable could be age_decades
  4. Use standardized naming conventions in longitudinal data to indicate assessment wave or year collected, e.g. for age data collected in 1998, variable should be named age_1998 or if 1998 was the year of the 2nd wave of data collection, age_w2
  5. When recoding a variable, the following approach should be used:
-  a. Do not recode over original variables, always generate a new variable
-  b. Name the new variable something descriptive
-  c. After the variable is recoded, examine the cross-tab with the old variable, or list a few observations showing both the old and new variables to ensure the recoding has been done properly. This should be included in the code script to demonstrate the recode has been done properly to the code reviewer
-  d. Apply a descriptive label to the variable (e.g. if income was inflation-adjusted to 2016 dollars, the label may be “income, inflation-adjusted to 2016 dollars”)
+   a. Do not recode over original variables, always generate a new variable
+   b. Name the new variable something descriptive
+   c. After the variable is recoded, examine the cross-tab with the old variable, or list a few observations showing both the old and new variables to ensure the recoding has been done properly. This should be included in the code script to demonstrate the recode has been done properly to the code reviewer
+   d. Apply a descriptive label to the variable (e.g. if income was inflation-adjusted to 2016 dollars, the label may be “income, inflation-adjusted to 2016 dollars”)
