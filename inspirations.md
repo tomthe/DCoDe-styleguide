@@ -56,7 +56,7 @@ practices and have evolved over the course of writing this paper.
     
     
     
-## Project structure from 
+## Project structure from https://github.com/anjul/dsprj-structure
 
 A directory-structure like this may be useful:
 
