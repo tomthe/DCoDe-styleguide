@@ -2,13 +2,15 @@
 
 ### Links
 
+* https://github.com/johannesharmse/datascience_cookiecutter
+* https://github.com/anjul/dsprj-structure
 * https://google.github.io/styleguide/
 * https://google.github.io/styleguide/pyguide.html
 * https://google.github.io/styleguide/Rguide.html
 * https://style.tidyverse.org/
 
 
-## Style Guide from the paper "
+## Style Guide from the paper "---"
 
 ### Example Style Guide for Coding in Academia to Facilitate Code Review
 This example Style Guide is for a relatively straightforward project of data cleaning and analysis. This
@@ -51,3 +53,54 @@ practices and have evolved over the course of writing this paper.
     b. Name the new variable something descriptive
     c. After the variable is recoded, examine the cross-tab with the old variable, or list a few observations showing both the old and new variables to ensure the recoding has been done properly. This should be included in the code script to demonstrate the recode has been done properly to the code reviewer
     d. Apply a descriptive label to the variable (e.g. if income was inflation-adjusted to 2016 dollars, the label may be “income, inflation-adjusted to 2016 dollars”)
+    
+    
+    
+## Project structure from 
+
+A directory-structure like this may be useful:
+
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           <- Scripts to download or generate data
+    │   │   └── make_dataset.py
+    │   │
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   │   └── build_features.py
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │   │   │                 predictions
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
+    │   │
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       └── visualize.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
