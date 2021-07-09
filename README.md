@@ -7,39 +7,6 @@ The recommendations may not generalize to all possible projects, so it is on you
 If done correctly, other people will have no questions when trying to reproduce your code.
 
 
-
-### Directory structure
-
-
-
-    ├── README.md          <- The top-level README for developers using this project.
-    │                         The readme should contain a short general description of the project
-    │                         and a high level description of what the code does and how to run it.
-    │                         
-    ├── data
-    │   ├── external       <- Data from third party sources. Include a text file that describes
-    │   │                     the origin of the data and how to get it.
-    │   ├── collected      <- Data that is collected during this project.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   └── processed      <- The final, canonical data sets for modeling.
-    │
-    ├── code               <- Code files. Naming convention is a number (for execution ordering),
-    │   │                      the creator's initials, and a short `-` delimited description, e.g.
-    │   │                      `1.0-jqp-initial-data-exploration`. No unused code here.
-    │   │
-    │   └── deprecated     <- (optional) old/redundant/unused code. This can be left there for 
-    │                         reference or deleted.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── references         <- (optional) Data dictionaries, manuals, and all other explanatory materials.
-    └── LICENSE            <- (optional) Look at https://choosealicense.com/ to find a suitable licence.
-    
-
-
-
-
 ### Code
 
 Taken from "Code Review as a Simple Trick to Enhance Reproducibility, Accelerate Learning, and Improve
@@ -82,11 +49,10 @@ the Quality of Your Team’s Research" by Vable, Diehl, Glymour.
     d. Apply a descriptive label to the variable (e.g. if income was inflation-adjusted to 2016 dollars, the label may be “income, inflation-adjusted to 2016 dollars”)
     
     
-
-
 ### Data
 
 If you use 
+
 
 ### git & Github
 
@@ -94,6 +60,34 @@ Use git to version control all the files (except data files bigger than 100 MB).
 You can use Github private repositories to share the project or the network-drives of the institute.
 Github issues are a better way to discuss issues than emails.
 
+### Directory structure
+
+
+
+    ├── README.md          <- The top-level README for developers using this project.
+    │                         The readme should contain a short general description of the project
+    │                         and a high level description of what the code does and how to run it.
+    │                         
+    ├── data
+    │   ├── external       <- Data from third party sources. Include a text file that describes
+    │   │                     the origin of the data and how to get it.
+    │   ├── collected      <- Data that is collected during this project.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   └── processed      <- The final, canonical data sets for modeling.
+    │
+    ├── code               <- Code files. Naming convention is a number (for execution ordering),
+    │   │                      the creator's initials, and a short `-` delimited description, e.g.
+    │   │                      `1.0-jqp-initial-data-exploration`. No unused code here.
+    │   │
+    │   └── deprecated     <- (optional) old/redundant/unused code. This can be left there for 
+    │                         reference or deleted.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── references         <- (optional) Data dictionaries, manuals, and all other explanatory materials.
+    └── LICENSE            <- (optional) Look at https://choosealicense.com/ to find a suitable licence.
+    
 
 ### Write good readme-files
 
