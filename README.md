@@ -1,4 +1,4 @@
-# DiCoDe-styleguide
+# DCoDe-styleguide
 
 Draft of a style guide for the DiCoDe-lab's research projects.
 This guide will presumably become a recommendation for new projects at the lab. 
