@@ -1,10 +1,12 @@
 # DiCoDe-styleguide
 
 Draft of a style guide for the DiCoDe-lab's research projects.
-This guide will become a recommendation for new projects at the lab. 
+This guide will presumably become a recommendation for new projects at the lab. 
 It gives you a simple and common structure to follow and reduces the hurdles for collaborators to understand the structure of your project.
 The recommendations may not generalize to all possible projects, so it is on you to decide where to follow this guide and where it makes sense to extend it or to go your own way.
 If done correctly, other people will have no questions when trying to reproduce your code.
+
+Suggestions and Contributions are very welcome! You can open an issue here on GitHub or send an email to Tom.
 
 
 ### Code
@@ -48,17 +50,6 @@ the Quality of Your Team’s Research" by Vable, Diehl, Glymour.
     c. After the variable is recoded, examine the cross-tab with the old variable, or list a few observations showing both the old and new variables to ensure the recoding has been done properly. This should be included in the code script to demonstrate the recode has been done properly to the code reviewer
     d. Apply a descriptive label to the variable (e.g. if income was inflation-adjusted to 2016 dollars, the label may be “income, inflation-adjusted to 2016 dollars”)
     
-    
-### Data
-
-If you use 
-
-
-### git & Github
-
-Use git to version control all the files (except data files bigger than 100 MB).
-You can use Github private repositories to share the project or the network-drives of the institute.
-Github issues are a better way to discuss issues than emails.
 
 ### Directory structure
 
@@ -89,6 +80,20 @@ Github issues are a better way to discuss issues than emails.
     └── LICENSE            <- (optional) Look at https://choosealicense.com/ to find a suitable licence.
     
 
+    
+### Data
+
+Save your data in a special data-directory as indicated in the above directory-structure. If your data are too big or too confidential, please save a text file in this place which explains where and how to find the data.
+
+
+
+### git & Github
+
+Use git to version control all the files (except data files bigger than 100 MB).
+You can use Github private repositories to share the project or the network-drives of the institute.
+Github issues are a better way to discuss issues than emails.
+
+
 ### Write good readme-files
 
 Your code should be usable and reproducible for other researchers.
@@ -97,13 +102,12 @@ That means that you have to include at least a minimal documentation.
 A readme-file doesn't need to explain every detail of your code, but it should give the reader concise information about:
  * What is this code about? What does it do? Why would you need it? What is the input, what is the output?
  * How do you *use* it?
- * How do you *develop* it?
+ * How do you *develop* it? (
 
-Nowadays it is standard practise to write readmes in the [Markdown format]( https://en.wikipedia.org/wiki/Markdown ). But a simple text-file is also fine.
 In the next chapter I wrote a structure for a readme that you can use. 
 
  
-#### Example Structure
+#### Example Structure for a readme
 
 ##### Title of the software
 
